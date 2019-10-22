@@ -62,7 +62,7 @@
 
     <h2> LIST </h2>
     <ul>
-      <li><img src="./broncos.jpeg" alt="Bronco's Logo"><br><a href="https://www.denverbroncos.com/">Denver Broncos</a></li>
+      <li><img src="./broncos.jpeg" alt="Bronco's Logo" width="10%"><br><a href="https://www.denverbroncos.com/">Denver Broncos</a></li>
         <ul>
           <li>Coach: Gary Kubial</li>
           <li>QB</li>
@@ -72,7 +72,7 @@
               <li>Peyton Manning (injured)</li>
             </ol>
         </ul>
-      <li><img src="./bears.png" alt="Bears Logo"> <br><a href="https://www.chicagobears.com/">Chicago Bears</a></li>
+      <li><img src="./bears.png" alt="Bears Logo" width="10%"> <br><a href="https://www.chicagobears.com/">Chicago Bears</a></li>
         <ul>
           <li>Coach: Bobby Lee</li>
           <li>QB</li>
@@ -84,6 +84,47 @@
     </ul>
 
     <h2> FORM </h2>
+    <form action="file:///Users/vintonlee/SD/HTML/assessment.html" method="get">
+      <label for="GET-name">First:</label>
+        <input id="GET-name" type="text" name="First" placeholder="Bob">
+      <label for="GET-name">Last:</label>
+        <input id="GET-name" type="text" name="Last" placeholder="Swagger">
+      <br>
+      <label for="GET-sport">Favorite Sport:</label>
+      <br>
+        <select name="sports" id="GET-sport">
+          <option value="Soccer">Soccer</option>
+          <option value="Football">Football</option>
+          <option value="Golf">Golf</option>
+        </select>
+      <br>
+      <label for="GET-sport-details">I have: </label>
+        <input type="checkbox" id="Attended" name="Attended" >
+        <label for="Attended">Attended</label>
+        <input type="checkbox" id="Played" name="Played" >
+        <label for="Played">Played</label>
+        <input type="checkbox" id="Bet on" name="Bet on" >
+        <label for="Bet on">Bet on this sport</label>
+
+
+        <div>
+          <label for="GET-sport-prefer">For this sport I prefer the:</label>
+          <input type="radio" id="preferChoice1"
+           name="prefer" value="Amature">
+          <label for="Amature">Amature</label>
+
+          <input type="radio" id="preferChoice2"
+           name="prefer" value="College">
+          <label for="College">College</label>
+
+          <input type="radio" id="preferChoice3"
+           name="prefer" value="Professional">
+          <label for="Professional">Professional</label>
+        </div>
+      <input type="submit" value="Submit Query">
+    </form>
+
+
 
   </body>
 </html>
